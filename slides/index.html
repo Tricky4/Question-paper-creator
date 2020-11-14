@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>College images</title>
+ <link rel="icon" type="image/png" href="logo.png" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
+	<script src="https://kit.fontawesome.com/d7b70fd4fa.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    var $ = jQuery.noConflict();
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+          animation: "fade"
+    });
+	
+	$(function() {
+		$('.show_menu').click(function(){
+				$('.menu').fadeIn();
+				$('.show_menu').fadeOut();
+				$('.hide_menu').fadeIn();
+		});
+		$('.hide_menu').click(function(){
+				$('.menu').fadeOut();
+				$('.show_menu').fadeIn();
+				$('.hide_menu').fadeOut();
+		});
+	});
+  });
+</script>
+</head>
+<body><br><br><br><br><br><br><br><br>     
+     <div class="slider_container" >
+		<div class="flexslider">
+	      <ul class="slides">
+	    	<li>
+	    		<a><img src="images/slider/slide1.jpg" alt="" title=""/></a>
+	    		<div class="flex-caption">
+                     <div class="caption_title_line"><h2 style="color:white">Main block</h2></div>
+                </div>
+	    	</li>
+	    	<li>
+	    		<a><img src="images/slider/slide2.jpg" alt="" title=""/></a>
+	    		<div class="flex-caption">
+                     <div class="caption_title_line"><h2 style="color:white">PG Block</h2></div>
+                </div>
+	    	</li>
+	    	<li>
+	    		<a><img src="images/slider/slide3.jpg" alt="" title=""/></a>
+	    		<div class="flex-caption">
+                     <div class="caption_title_line"><h2 style="color:white">College Entrace</h2></div>
+                </div>
+	    	</li>
+	    	<li>
+	    		<a><img src="images/slider/slide4.jpg" alt="" title=""/></a>
+	    		<div class="flex-caption">
+                     <div class="caption_title_line"><h2 style="color:white">NIT block</h2></div>
+                </div>
+	    	</li>
+	    </ul>
+	  </div>
+   </div>
+    </div>  
+</div>
+</body>
+</html>
